@@ -7,7 +7,7 @@
     <title>Главная</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--<script src="https://api-maps.yandex.ru/3.0/?apikey=<ваш API-ключ>&lang=ru_RU"></script>-->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7b651f56-3227-4ad1-8774-e8f13c771299&lang=ru_RU"></script>
     <script src="scripts/index.js"></script>
 </head>
 <body>
@@ -51,6 +51,7 @@
             <h2>Филиалы</h2>
             <hr>
             <p>г.Москва, м.Говорово, 55.653396, 37.437420</p>
+            <p>г.Москва, м.Говорово, 55.653396, 37.437420</p>
             <h2>График работы</h2>
             <hr>
             <p>ежедневно 9:00 - 21:00</p>
@@ -63,9 +64,8 @@
                 <input type="submit" value="Отправить">
             </form>
         </article>
-        <article class="map">
-            <!--Нужен api ключ яндекса, доступен только после получения ссылки на готовый проект-->
-        </article>
     </main>
+    <div class="map" id="map-container">
+    </div>
 </body>
 </html>

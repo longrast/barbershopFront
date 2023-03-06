@@ -137,6 +137,7 @@ body {
             img {
                 object-fit: cover;
                 width: 100%;
+                height: 100%;
             }
             figcaption {
                 //border: 1px solid blue;
@@ -157,6 +158,7 @@ body {
     main {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: space-between;
         .contacts {
             border: 1px solid rgb(94, 94, 94);
@@ -239,5 +241,9 @@ body {
                 
             }
         }
+    }
+    .map {
+        width: 100%;
+        height: 400px;
     }
 }
