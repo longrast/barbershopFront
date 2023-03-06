@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Главная</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--place for navbar-->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <p data-word="KENT">KENT</p>
+        </div>
+        <div class="navbar__elements">
+            <a href="#">Главная</a>
+            <a href="contacts/index.html">Контакты</a>
+            <a href="">Портфолио</a>
+            <div class="navbar_combined-btn">
+                <a href="">Косметика</a>
+                <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>0</span></a><!--ссылка на корзину-->
+            </div>
+            <div class="navbar_combined-btn">
+                <a href="">Услуги</a>
+                <a href=""><i class="fa fa-book" aria-hidden="true"></i><span>0</span></a><!--ссылка на записи-->
+            </div>
+        </div>
+    </nav>
+    <main>
+        <article class="buttons">
+            <div class="buttons__background-reg">
+                <a href="#" class="buttons__registration">Регистрация</a>
+            </div>
+            <div class="buttons__background-auth">
+                <a href="#" class="buttons__authorization">Авторизация</a>
+            </div>
+        </article>
+        <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="images/desktop1.jpg" />
+                </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-2" />
+            <li class="slide-container">
+                <div class="slide">
+                  <img src="images/desktop2.jpg" />
+                </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-3" />
+            <li class="slide-container">
+                <div class="slide">
+                  <img src="images/desktop3.jpg" />
+                </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-4" />
+            <li class="slide-container">
+                <div class="slide">
+                  <img src="images/desktop4.jpg" />
+                </div>
+            </li>
+        
+            <li class="nav-dots">
+              <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+              <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+              <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+              <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
