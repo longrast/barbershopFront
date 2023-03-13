@@ -49,7 +49,7 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 14vh;
+        height: 110px;
         color: white;
         position: fixed;
         transition: 0.5s;
@@ -75,6 +75,7 @@ body {
             font-weight: 500;
             letter-spacing: 1px;
             font-size: 1rem;
+            text-transform: uppercase;
             a {
                 margin: auto 0;
                 padding: 10px;
@@ -95,6 +96,7 @@ body {
                 justify-content: center;
                 font-weight: 500;
                 letter-spacing: 2px;
+                text-transform: uppercase;
                 a {
                     display: block;
                     background-color: white;

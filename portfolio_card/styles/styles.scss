@@ -33,6 +33,7 @@
 * {
     margin: 0;
     padding: 0;
+    //border: 1px solid white;
 }
 html {
     font-size: 18px;
@@ -125,128 +126,57 @@ body {
             }
         }
     }
-    .contact-us {
-        //border: 1px solid red;
-        height: 400px;
-        width: 100%;
-    
-        figure {
-            width: 100%;
-            height: 100%;
-            //border: 1px solid green;
-            overflow: hidden;
-            position: relative;
-            //text-align: center;
-            img {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-            }
-            figcaption {
-                //border: 1px solid blue;
-                //position: fixed;
-                position: absolute;
-                top: 200px;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                font-size: 1.4rem;
-                color: white;
-                letter-spacing: 2px;
-                line-height: 1.5;
-            }
-        }
+    header {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        font-size: 1.4rem;
+        color: white;
     }
     main {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        .contacts {
-            border: 1px solid rgb(94, 94, 94);
-            border-radius: 20px;
-            box-sizing: border-box;
-            width: 600px;
-            margin: 200px 100px;
-            background-color: rgb(94, 94, 94);
-            figure {
-                img {
-                    display: block;
-                    margin: 30px auto;
-                    border-radius: 100%;
-                    width: 150px;
-                }
-            }
-            h2 {
-                font-size: 1.6rem;
-                text-align: center;
-            }
-            hr {
-                width: 250px;
-                margin: 10px auto;
-                border: 1px solid black;
-            }
-            p {
-                color: white;
-                text-align: center;
-                margin: 30px 0;
-                &:last-child {
-                    margin: 30px 0 60px 0;
-                }
-            }
-        }
-        .form {
-            //border: 1px solid white;
-            width: 600px;
-            margin: 200px 100px;
-            
-            form {
-                height: 100%;
-                width: 100%;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        .reusable-block{
+            width: 80%;
+            margin: 0 auto;
+            .reviews{
                 display: flex;
-                flex-direction: column;
-                margin: 80px 0;
-                input {
-                    height: 50px;
-                    border-radius: 5px;
-                    margin: 10px 0;
-                    padding: 0 15px;
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    &::placeholder {
-                        font-size: 1.2rem;
-                        //font-family: 'Inter', sans-serif;
-                        font-weight: 700;
-                    }
-                    &:last-child {
-                        width: 50%;
-                        background-color: rgb(255, 199, 0);
-                        font-size: 1.2rem;
-                        margin-left: auto;
-                        font-weight: 700;
-                    }
-                }
-                textarea {
-                    height: 200px;
-                    border-radius: 5px;
-                    margin: 10px 0;
-                    padding: 0 15px;
-                    font-size: 1.2rem;
-                    font-weight: 700;
-                    resize: none;
-                    &::placeholder {
-                        font-size: 1.2rem;
-                        font-weight: 700;
-                        letter-spacing: 1px;
-                    }
-                }
-                
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin: 40px 0;           
+    
             }
+           .review-view{
+            background-color: rgb(217, 217, 217);
+                figure{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    .user{
+                        display: flex;
+                        align-items: center;
+                        margin: 20px 50px; 
+                        figcaption{
+                            margin-left: 40px;
+                        }
+                        img{
+                            width: 100px;
+                            height: auto;
+                            border-radius: 100%;
+                        }
+                    }
+                    .stars{
+                       letter-spacing: 4px;
+                       font-size: 1.4rem;
+                       margin: 0 50px;
+                    }
+                    
+                }
+        
+           }
         }
-    }
-    .map {
-        width: 100%;
-        height: 400px;
     }
 }

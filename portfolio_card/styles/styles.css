@@ -121,125 +121,53 @@ body .navbar .navbar__elements .navbar_combined-btn a:last-child {
   padding: 15px 15px 15px 5px;
   border-left: 1px solid black;
 }
-body .contact-us {
-  height: 400px;
-  width: 100%;
-}
-body .contact-us figure {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-body .contact-us figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-body .contact-us figure figcaption {
-  position: absolute;
-  top: 200px;
-  width: 100%;
+body header {
+  margin-top: 200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   font-size: 1.4rem;
   color: white;
-  letter-spacing: 2px;
-  line-height: 1.5;
 }
 body main {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-body main .contacts {
-  border: 1px solid rgb(94, 94, 94);
-  border-radius: 20px;
-  box-sizing: border-box;
-  width: 600px;
-  margin: 200px 100px;
-  background-color: rgb(94, 94, 94);
-}
-body main .contacts figure img {
-  display: block;
-  margin: 30px auto;
-  border-radius: 100%;
-  width: 150px;
-}
-body main .contacts h2 {
-  font-size: 1.6rem;
-  text-align: center;
-}
-body main .contacts hr {
-  width: 250px;
-  margin: 10px auto;
-  border: 1px solid black;
-}
-body main .contacts p {
-  color: white;
-  text-align: center;
-  margin: 30px 0;
-}
-body main .contacts p:last-child {
-  margin: 30px 0 60px 0;
-}
-body main .form {
-  width: 600px;
-  margin: 200px 100px;
-}
-body main .form form {
-  height: 100%;
-  width: 100%;
-  display: flex;
   flex-direction: column;
-  margin: 80px 0;
+  align-items: center;
+  color: white;
 }
-body main .form form input {
-  height: 50px;
-  border-radius: 5px;
-  margin: 10px 0;
-  padding: 0 15px;
-  font-size: 1.2rem;
-  font-weight: 700;
+body main .reusable-block {
+  width: 80%;
+  margin: 0 auto;
 }
-body main .form form input::-moz-placeholder {
-  font-size: 1.2rem;
-  font-weight: 700;
+body main .reusable-block .reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 40px 0;
 }
-body main .form form input::placeholder {
-  font-size: 1.2rem;
-  font-weight: 700;
+body main .reusable-block .review-view {
+  background-color: rgb(217, 217, 217);
 }
-body main .form form input:last-child {
-  width: 50%;
-  background-color: rgb(255, 199, 0);
-  font-size: 1.2rem;
-  margin-left: auto;
-  font-weight: 700;
+body main .reusable-block .review-view figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-body main .form form textarea {
-  height: 200px;
-  border-radius: 5px;
-  margin: 10px 0;
-  padding: 0 15px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  resize: none;
+body main .reusable-block .review-view figure .user {
+  display: flex;
+  align-items: center;
+  margin: 20px 50px;
 }
-body main .form form textarea::-moz-placeholder {
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+body main .reusable-block .review-view figure .user figcaption {
+  margin-left: 40px;
 }
-body main .form form textarea::placeholder {
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+body main .reusable-block .review-view figure .user img {
+  width: 100px;
+  height: auto;
+  border-radius: 100%;
 }
-body .map {
-  width: 100%;
-  height: 400px;
+body main .reusable-block .review-view figure .stars {
+  letter-spacing: 4px;
+  font-size: 1.4rem;
+  margin: 0 50px;
 }/*# sourceMappingURL=styles.css.map */

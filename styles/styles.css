@@ -21,7 +21,7 @@ body .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 14vh;
+  height: 110px;
   color: white;
   position: fixed;
   transition: 0.5s;
@@ -73,6 +73,7 @@ body .navbar .navbar__elements {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 1rem;
+  text-transform: uppercase;
 }
 body .navbar .navbar__elements a {
   margin: auto 0;
@@ -93,6 +94,7 @@ body .navbar .navbar__elements .navbar_combined-btn {
   justify-content: center;
   font-weight: 500;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 body .navbar .navbar__elements .navbar_combined-btn a {
   display: block;
