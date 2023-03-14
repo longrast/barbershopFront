@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(33, 33, 33);
+}
+body .navbar {
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 110px;
+  color: white;
+  position: fixed;
+  top: 0;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.238);
+}
+body .navbar .navbar__logo {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 150px;
+}
+body .navbar .navbar__logo p {
+  position: relative;
+  visibility: hidden;
+}
+body .navbar .navbar__logo p::before, body .navbar .navbar__logo p::after {
+  visibility: visible;
+  content: attr(data-word);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+body .navbar .navbar__logo p::before {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 37%, 0 65%);
+          clip-path: polygon(0 0, 100% 0%, 100% 37%, 0 65%);
+  will-change: transform;
+  transform: translatex(-0.13rem);
+}
+body .navbar .navbar__logo p::after {
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 39%, 0 67%);
+          clip-path: polygon(0% 100%, 100% 100%, 100% 39%, 0 67%);
+  transform: translatex(0.13rem);
+}
+body .navbar .navbar__logo p:hover::before, body .navbar .navbar__logo p:hover::after {
+  transform: translatex(0) translatez(0);
+}
+body .navbar .navbar__elements {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+body .navbar .navbar__elements a {
+  margin: auto 0;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  color: white;
+}
+body .navbar .navbar__elements a:visited {
+  color: white;
+}
+body .navbar .navbar__elements a:hover {
+  color: rgb(100, 100, 100);
+}
+body .navbar .navbar__elements .navbar_combined-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+body .navbar .navbar__elements .navbar_combined-btn a {
+  display: block;
+  background-color: white;
+  height: 20px;
+  color: black;
+}
+body .navbar .navbar__elements .navbar_combined-btn a:visited {
+  color: black;
+}
+body .navbar .navbar__elements .navbar_combined-btn a:hover {
+  background-color: rgb(181, 181, 181);
+}
+body .navbar .navbar__elements .navbar_combined-btn a:first-child {
+  border-radius: 25px 0 0 25px;
+  padding: 15px 5px 15px 15px;
+  border-right: 1px solid black;
+}
+body .navbar .navbar__elements .navbar_combined-btn a:last-child {
+  border-radius: 0 25px 25px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 15px 15px 15px 5px;
+  border-left: 1px solid black;
+}
+body header {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: white;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main figure {
+  width: 70%;
+  margin: 100px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 600px;
+}
+body main figure img {
+  min-width: 45%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main figure figcaption {
+  color: black;
+  background-color: rgb(217, 217, 217);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+body main figure figcaption h2 {
+  font-size: 1.4rem;
+  margin: 10% 0;
+}
+body main figure figcaption p {
+  margin: 0 10%;
+  line-height: 1.5;
+}
+body main figure figcaption a {
+  text-decoration: none;
+  margin: 5% 5% 5% auto;
+}/*# sourceMappingURL=styles.css.map */
