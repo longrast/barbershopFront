@@ -176,6 +176,7 @@ body main .category .item {
   flex-direction: column;
   width: 25%;
   height: 600px;
+  max-width: 400px;
   background-color: rgb(217, 217, 217);
   border-radius: 15px;
   overflow: hidden;
