@@ -167,7 +167,7 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                margin-right: 10px;
+                margin-right: 40px;
             }
             img{
                 width: 130px;
@@ -176,13 +176,17 @@ body {
             }
             p{
                 margin: auto auto;
+                .fa-times {
+                    font-size: 3rem;
+                }
+                .fa-rub{
+                    margin-left: 20px;
+                }
+                /*
                 .fa-times{
                     margin: auto auto 0px 15px;
                         font-size: 3rem;
-                }
-                .fa-rub{
-                    margin-left: 10px;
-                }
+                }*/
                 
             }
         }

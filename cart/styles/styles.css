@@ -164,7 +164,7 @@ body main .basket_item .final_price {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 body main .basket_item img {
   width: 130px;
@@ -173,13 +173,17 @@ body main .basket_item img {
 }
 body main .basket_item p {
   margin: auto auto;
+  /*
+  .fa-times{
+      margin: auto auto 0px 15px;
+          font-size: 3rem;
+  }*/
 }
 body main .basket_item p .fa-times {
-  margin: auto auto 0px 15px;
   font-size: 3rem;
 }
 body main .basket_item p .fa-rub {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 body main .price-btn {
   display: flex;
