@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Главная</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="scripts/index.js"></script>
+</head>
+<body>
+    <!--place for navbar-->
+    <nav class="navbar" id="nb">
+        <div class="navbar__logo">
+            <p data-word="KENT">KENT</p>
+        </div>
+        <div class="navbar__elements">
+            <a href="../index.html">Главная</a>
+            <a href="">Контакты</a>
+            <a href="">Портфолио</a>
+            <div class="navbar_combined-btn">
+                <a href="">Косметика</a>
+                <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>0</span></a><!--ссылка на корзину-->
+            </div>
+            <div class="navbar_combined-btn">
+                <a href="">Услуги</a>
+                <a href=""><i class="fa fa-book" aria-hidden="true"></i><span>0</span></a><!--ссылка на записи-->
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Редактирование профиля</h1>
+    </header>
+    <main>
+        <img src="images/cosmetics_card_rewiewer.png" alt="omage not loaded">
+        <form action="POST">
+            <input required value="Зарегистрированное Имя" type="text" name="first_name" id="first_name" placeholder="Имя">
+            <input required value="Зарегистрированная Фамилия" type="text" name="second_name" id="second_name" placeholder="Фамилия">
+            <input class="inputnum" required value="Зарегистрированный возраст" type="number" name="age" id="age" placeholder="Возраст">
+            <input required value="Зарегистрированный номер" type="tel" name="number" id="number" placeholder="Номер телефона" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+            <input required value="Зарегистрированная почта" type="text" name="email" id="email" placeholder="Почта">
+            <input required value="Зарегистрированный пароль" type="text" name="pswd" id="pswd" placeholder="Пароль">
+            <div>
+                <div class="cancel">
+                    <a href="#" class="cancel_btn">Авторизация</a>
+                </div>
+                <button type="submit">Сохранить</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
